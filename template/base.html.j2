@@ -2,18 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>TSNL | Index</title>
+    <title>{% block header_title %}{% endblock header_title %}</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/theme.css">
   </head>
   <body>
     <div class="main">
-      <h1>TSNL / Downloads</h1>
+      <h1>{% block title %}{% endblock title %}</h1>
       <hr>
 
-      <p>
-        Work in progress. Please come back later.
-      </p>
+      {% block content %}
+      {% endblock content %}
+
     </div>
   </body>
 </html>
